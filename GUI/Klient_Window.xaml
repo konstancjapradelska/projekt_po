@@ -1,0 +1,19 @@
+﻿<Window x:Class="GUI.Klient_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Klient" Height="450" Width="800">
+    <Grid Margin="0,0,-6.4,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="755*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="                                             Proszę wprowadzić numer klienta" Grid.Column="1" Height="51" Margin="122.8,85,0,0" VerticalAlignment="Top" Width="474" HorizontalAlignment="Left"/>
+        <TextBox x:Name="TextBox_Numer_Klienta" Grid.Column="1" HorizontalAlignment="Left" Height="53" Margin="266.8,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <Button x:Name="K_Button_Zatwierdź_Numer_Klienta" Content="Zatwierdź" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="266.8,263,0,0" VerticalAlignment="Top" Width="203" Click="K_Button_Zatwierdź_Numer_Klienta_Click"/>
+
+    </Grid>
+</Window>
