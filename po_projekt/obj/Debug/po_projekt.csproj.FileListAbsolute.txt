@@ -11,3 +11,9 @@ C:\Users\Konstancja\Documents\po_projekt\po_projekt\obj\Debug\po_projekt.csprojA
 C:\Users\Konstancja\Documents\po_projekt\po_projekt\obj\Debug\po_projekt.csproj.CoreCompileInputs.cache
 C:\Users\Konstancja\Documents\po_projekt\po_projekt\obj\Debug\po_projekt.exe
 C:\Users\Konstancja\Documents\po_projekt\po_projekt\obj\Debug\po_projekt.pdb
+C:\Users\Konstancja\Documents\projekt_po\po_projekt\bin\Debug\po_projekt.exe
+C:\Users\Konstancja\Documents\projekt_po\po_projekt\bin\Debug\po_projekt.pdb
+C:\Users\Konstancja\Documents\projekt_po\po_projekt\obj\Debug\po_projekt.csprojAssemblyReference.cache
+C:\Users\Konstancja\Documents\projekt_po\po_projekt\obj\Debug\po_projekt.csproj.CoreCompileInputs.cache
+C:\Users\Konstancja\Documents\projekt_po\po_projekt\obj\Debug\po_projekt.exe
+C:\Users\Konstancja\Documents\projekt_po\po_projekt\obj\Debug\po_projekt.pdb

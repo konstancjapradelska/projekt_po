@@ -22,3 +22,13 @@ C:\Users\Konstancja\Documents\po_projekt\GUI\obj\Debug\Klient_Window.baml
 C:\Users\Konstancja\Documents\po_projekt\GUI\obj\Debug\Pracownik_Window.baml
 C:\Users\Konstancja\Documents\po_projekt\GUI\obj\Debug\Klient_Menu_Window.g.cs
 C:\Users\Konstancja\Documents\po_projekt\GUI\obj\Debug\Klient_Menu_Window.baml
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Klient_Menu_Window.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Klient_Window.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Pracownik_Window.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\App.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI.exe
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI.pdb
