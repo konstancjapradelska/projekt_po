@@ -23,7 +23,7 @@ namespace po_projekt
             pracownik wynik = new pracownik();
             foreach (pracownik element in Pracownicy)
             {
-                if(element.Identyfikator == p.Identyfikator)
+                if (element.Identyfikator == p.Identyfikator)
                 {
                     wynik = element;
                 }

@@ -22,6 +22,7 @@ namespace po_projekt
         private skrzynia_biegów Skrzynia_Biegów;
         private rodzaj_nadwozia Rodzaj_Nadwozia;
         private rezerw rezerwacja;
+        private string rezerwujacy;
 
         public klasa Klasa1 { get => Klasa; set => Klasa = value; }
         public string Marka1 { get => Marka; set => Marka = value; }
@@ -30,6 +31,7 @@ namespace po_projekt
         public rodzaj_nadwozia Rodzaj_Nadwozia1 { get => Rodzaj_Nadwozia; set => Rodzaj_Nadwozia = value; }
         public string Model1 { get => Model; set => Model = value; }
         public rezerw Rezerwacja { get => rezerwacja; set => rezerwacja = value; }
+        public string Rezerwujacy { get => rezerwujacy; set => rezerwujacy = value; }
 
         public samochody()
         {
@@ -43,22 +45,23 @@ namespace po_projekt
             Skrzynia_Biegów = skrzynia_Biegów;
             Rodzaj_Nadwozia = rodzaj_Nadwozia;
             Rezerwacja = rezerw.Niezarezerwowany;
+            Rezerwujacy = null;
         }
 
         public int CompareTo(object other)
         {
-         
-             if (other != null)
-             {
-                  samochody k = (samochody)other;
-                  int cmp = Klasa.CompareTo(k.Klasa);
-                  if (cmp != 0)
-                      return cmp;
-                  else
-                      return 0;
-             }
-             else
-                  return 1;
+
+            if (other != null)
+            {
+                samochody k = (samochody)other;
+                int cmp = Klasa.CompareTo(k.Klasa);
+                if (cmp != 0)
+                    return cmp;
+                else
+                    return 0;
+            }
+            else
+                return 1;
         }
 
         public override string ToString()

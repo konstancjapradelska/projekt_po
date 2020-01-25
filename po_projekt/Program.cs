@@ -20,7 +20,7 @@ namespace po_projekt
             samochody s6 = new samochody { Klasa1 = samochody.klasa.klasa_D, Marka1 = "Kia", Model1 = "Optima", Silnik1 = samochody.silnik.diesel, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback };
             samochody s7 = new samochody { Klasa1 = samochody.klasa.klasa_E, Marka1 = "BMW", Model1 = "525", Silnik1 = samochody.silnik.diesel, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.sedan };
             samochody s8 = new samochody { Klasa1 = samochody.klasa.klasa_E, Marka1 = "BMW", Model1 = "550", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.combi };
-            
+
             Oferta.Dodaj(s1);
             Oferta.Dodaj(s2);
             Oferta.Dodaj(s3);
@@ -33,11 +33,11 @@ namespace po_projekt
             #endregion
 
             #region baza pracowników
-            pracownik p1 = new pracownik { Imie = "Jan"  , Nazwisko = "Janowski" , Pesel ="82080328496" , Identyfikator = "100", Stanowisko1 = pracownik.Stanowisko.kierownik };
-            pracownik p2 = new pracownik { Imie = "Beata"  , Nazwisko = "Jurkiewicz" , Pesel = "92102201347" , Identyfikator ="101" , Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
-            pracownik p3 = new pracownik { Imie = "Anna" , Nazwisko = "Dobrowolska", Pesel = "92031507772" , Identyfikator ="102" , Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
-            pracownik p4 = new pracownik { Imie = "Jakub" , Nazwisko = "Grobelczyk" , Pesel = " 90070100211" , Identyfikator ="103" , Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
-            pracownik p5 = new pracownik { Imie = "Wiktor" , Nazwisko = "Jagielski", Pesel = " 92031532652", Identyfikator ="104" , Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
+            pracownik p1 = new pracownik { Imie = "Jan", Nazwisko = "Janowski", Pesel = "82080328496", Identyfikator = "100", Stanowisko1 = pracownik.Stanowisko.kierownik };
+            pracownik p2 = new pracownik { Imie = "Beata", Nazwisko = "Jurkiewicz", Pesel = "92102201347", Identyfikator = "101", Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
+            pracownik p3 = new pracownik { Imie = "Anna", Nazwisko = "Dobrowolska", Pesel = "92031507772", Identyfikator = "102", Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
+            pracownik p4 = new pracownik { Imie = "Jakub", Nazwisko = "Grobelczyk", Pesel = " 90070100211", Identyfikator = "103", Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
+            pracownik p5 = new pracownik { Imie = "Wiktor", Nazwisko = "Jagielski", Pesel = " 92031532652", Identyfikator = "104", Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
 
             pracownicy Pracownicy = new pracownicy();
             Pracownicy.Dodaj(p1);
@@ -49,11 +49,11 @@ namespace po_projekt
             #endregion
 
             #region baza klientów
-            klient k1 = new klient { Imie = "Witold"  , Nazwisko = "Adamski" , Pesel = "90070142412", Numer_klienta = "200" };
-            klient k2 = new klient { Imie = "Paulina" , Nazwisko = "Szymańska" , Pesel = "92102266738", Numer_klienta = "201" };
-            klient k3 = new klient { Imie = "Adam" , Nazwisko = "Winnicki" , Pesel = "91072235964 K", Numer_klienta = "202" };
-            klient k4 = new klient { Imie = "Radosław" , Nazwisko = "Leszczyński" , Pesel = "93112225023", Numer_klienta = "203" };
-            klient k5 = new klient { Imie = "Błażej" , Nazwisko = "Tomaszewski" , Pesel = "92051613915", Numer_klienta = "204" };
+            klient k1 = new klient { Imie = "Witold", Nazwisko = "Adamski", Pesel = "90070142412", Numer_klienta = "200" };
+            klient k2 = new klient { Imie = "Paulina", Nazwisko = "Szymańska", Pesel = "92102266738", Numer_klienta = "201" };
+            klient k3 = new klient { Imie = "Adam", Nazwisko = "Winnicki", Pesel = "91072235964 K", Numer_klienta = "202" };
+            klient k4 = new klient { Imie = "Radosław", Nazwisko = "Leszczyński", Pesel = "93112225023", Numer_klienta = "203" };
+            klient k5 = new klient { Imie = "Błażej", Nazwisko = "Tomaszewski", Pesel = "92051613915", Numer_klienta = "204" };
 
             klienci Klienci = new klienci();
             Klienci.Dodaj(k1);
@@ -62,7 +62,7 @@ namespace po_projekt
             Klienci.Dodaj(k4);
             Klienci.Dodaj(k5);
 
-            Klienci.Zapisz_Klientów_XML("klienci.xml",Klienci);
+            Klienci.Zapisz_Klientów_XML("klienci.xml", Klienci);
             #endregion
 
             string opcja;
@@ -78,11 +78,20 @@ namespace po_projekt
                 {
                     Console.WriteLine("Wybrano opcję : klient");
                     klient k = new klient();
-                    Console.WriteLine("Proszę o wprowadzenie numeru klienta:");
-                    k.Numer_klienta = Console.ReadLine();
-                    klient K = new klient();
-                    K = Klienci.sprawdzenie(k) as klient;
-                    Console.WriteLine("Zalogowano jako klient:\n" + K);
+                    bool numer=false;
+                    do
+                    {
+                        Console.WriteLine("Proszę o wprowadzenie numeru klienta:");
+                        k.Numer_klienta = Console.ReadLine();
+                        klient K = new klient();
+
+                        if (Klienci.sprawdzenie(k))
+                            numer = true;
+                        else
+                            Console.WriteLine("\nWprowadzono niepoprawny numer.\n");
+                    }
+                    while (numer != true);
+                    Console.WriteLine("Zalogowano jako klient:\n" + k);
                     string wybór;
                     do
                     {
@@ -90,10 +99,11 @@ namespace po_projekt
                         Console.WriteLine("                Jeżeli chcesz wyświetlić naszą ofertę wybierz: oferta");
                         Console.WriteLine("                Jeżeli chcesz zarezerwować samochód wybierz: rezerwuj");
                         Console.WriteLine("                Jeżeli chcesz wypożyczyć samochód wybierz: wypożycz");
+                        Console.WriteLine("                Jeżeli chcesz zobaczyć swoją listę aut zarezerwowanych wybierz: lista");
                         Console.WriteLine("                Jeżeli chcesz wyjść wybierz : koniec\n");
                         Console.WriteLine("Twój wybór:");
                         wybór = Console.ReadLine();
-                        if(wybór == "oferta") 
+                        if (wybór == "oferta")
                         {
                             Oferta = Oferta.OdczytajXML("zapis.xml") as oferta;
                             Console.WriteLine("Wybierz sortowanie:");
@@ -117,7 +127,7 @@ namespace po_projekt
                                     Oferta.Sortuj_po_modelu_samochodu();
                                     Console.WriteLine(Oferta);
                                 }
-                                else if (wybór_sortowania =="cena")
+                                else if (wybór_sortowania == "cena")
                                 {
                                     Console.WriteLine("opcja do dodania");
                                 }
@@ -125,21 +135,25 @@ namespace po_projekt
                                     break;
                             }
                             while (wybór_sortowania != "koniec");
-                            
+
                         }
-                        else if(wybór == "rezerwuj")
+                        else if (wybór == "rezerwuj")
                         {
-                            Console.WriteLine("Wybierz samochodów do rezerwacji:");                           
+                            Console.WriteLine("Wybierz samochodów do rezerwacji:");
                             rezerwacja r1 = new rezerwacja();
-                            r1.wybór_samochodu_do_rezerwacji(Oferta);
+                            r1.wybór_samochodu_do_rezerwacji(Oferta, k);
                             oferta.ZapiszXML("zapis.xml", Oferta);
                         }
                         else if (wybór == "wypożycz")
                         {
                             Console.WriteLine("Wybierz samochodów do wypożyczenia:");
                             wypożyczanie w1 = new wypożyczanie();
-                            w1.wypożycz(w1.wybór_samochodu_do_wypożyczenia(Oferta),Oferta);
+                            w1.wypożycz(w1.wybór_samochodu_do_wypożyczenia(Oferta, k), Oferta);
                             oferta.ZapiszXML("zapis.xml", Oferta);
+                        }
+                        else if (wybór == "lista")
+                        {
+                            k.Rezerwacje_klienta(Oferta);
                         }
                         else if (wybór == "koniec")
                             break;
@@ -147,8 +161,8 @@ namespace po_projekt
                         {
                             Console.WriteLine("Nie wybrano żadnej z opcji");
                         }
-                    } 
-                    while (wybór != "koniec" ) ;
+                    }
+                    while (wybór != "koniec");
                 }
                 else if (opcja == "p")
                 {
@@ -156,7 +170,7 @@ namespace po_projekt
                     pracownik p = new pracownik();
                     Console.WriteLine("Proszę o wprowadzenie identyfikatora:");
                     p.Identyfikator = Console.ReadLine();
-                    
+
                     Console.WriteLine("Proszę o wprowadzenie hasła:");
                     string hasło;
                     do
@@ -164,7 +178,7 @@ namespace po_projekt
                         pracownik P = new pracownik();
                         P = Pracownicy.sprawdzenie(p) as pracownik;
                         hasło = Console.ReadLine();
-                        if(hasło == "programowanie")
+                        if (hasło == "programowanie")
                         {
                             Console.WriteLine("Poprawe hasło, zapraszamy.\n");
                             Console.WriteLine("Zalogowano się do systemu jako:\n" + P);
@@ -203,13 +217,13 @@ namespace po_projekt
                                         if (klasa == "C")
                                         { d.Klasa1 = samochody.klasa.klasa_C; break; }
                                         if (klasa == "D")
-                                        {  d.Klasa1 = samochody.klasa.klasa_D; break;}
+                                        { d.Klasa1 = samochody.klasa.klasa_D; break; }
                                         if (klasa == "E")
-                                        {  d.Klasa1 = samochody.klasa.klasa_E; break;}
+                                        { d.Klasa1 = samochody.klasa.klasa_E; break; }
                                         else
                                             Console.WriteLine("Proszę wybrać klasę A lub B lub C lub D lub E");
                                     }
-                                    while ((klasa != "A") || (klasa != "B") || (klasa != "C" )|| (klasa != "D") || (klasa != "E"));
+                                    while ((klasa != "A") || (klasa != "B") || (klasa != "C") || (klasa != "D") || (klasa != "E"));
                                     Console.WriteLine("Wprowadź markę:\n");
                                     d.Marka1 = Console.ReadLine();
                                     Console.WriteLine("Wprowadź model:\n");
@@ -258,7 +272,7 @@ namespace po_projekt
 
                                     }
                                     while ((nadwozie != "combi") || (nadwozie != "hatchback") || (nadwozie != "sedan"));
-                                                                      
+
                                     Oferta.Dodaj(d);
 
                                     oferta.ZapiszXML("zapis.xml", Oferta);
@@ -319,7 +333,7 @@ namespace po_projekt
                                 }
                                 if (P.Stanowisko1 == pracownik.Stanowisko.kierownik)
                                 {
-                                    if(wybór == "dodajp")
+                                    if (wybór == "dodajp")
                                     {
                                         pracownik p6 = new pracownik();
                                         Console.WriteLine("\nPodaj imie nowego pracownika: ");
@@ -335,24 +349,24 @@ namespace po_projekt
                                         {
                                             Console.WriteLine("Podaj stanowisko nowego pracownika: (kierownik lub zwykły_pracownik)");
                                             stanowisko = Console.ReadLine();
-                                            if(stanowisko == "kierownik")
+                                            if (stanowisko == "kierownik")
                                                 p6.Stanowisko1 = pracownik.Stanowisko.kierownik;
-                                            else if(stanowisko == "zwykły_pracownik")
+                                            else if (stanowisko == "zwykły_pracownik")
                                                 p6.Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik;
                                             else
                                                 Console.WriteLine("Prosze wybrac : kierownik lub zwykły_pracownik");
 
                                         }
                                         while (stanowisko != "kierownik" && stanowisko != "zwykły_pracownik");
-                                       
+
                                         Pracownicy.Dodaj(p6);
                                     }
 
-                                    if(wybór == "usuńp")
+                                    if (wybór == "usuńp")
                                     {
                                         Pracownicy.Usuń(Pracownicy.wybór_pracownika_do_usunięcia());
                                     }
-                                    if(wybór == "listap")
+                                    if (wybór == "listap")
                                     {
                                         Console.WriteLine(Pracownicy);
                                     }
@@ -360,7 +374,7 @@ namespace po_projekt
 
                                 else if (wybór == "koniec")
                                     break;
-                                else 
+                                else
                                 {
                                     Console.WriteLine("Nie wybrano żadnej z opcji");
                                 }
@@ -385,7 +399,8 @@ namespace po_projekt
                 }
             }
             while (opcja != "koniec");
-           
+            Klienci = Klienci.Odczytaj_Klientów_XML("klienci.xml") as klienci;
+            Console.WriteLine(Klienci);
             //#region serializacja
             //oferta.ZapiszXML("zapis.xml", Oferta);
             //Oferta = Oferta.OdczytajXML("zapis.xml") as oferta;
@@ -406,5 +421,4 @@ namespace po_projekt
 }
 
 
- 
 

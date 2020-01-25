@@ -10,17 +10,18 @@ namespace po_projekt
     {
         int Ilość_samochodów_zarezerwowanych;
 
-        
+
         internal rezerw Rezerwacja1 { get => Rezerwacja; set => Rezerwacja = value; }
         public int Ilość_samochodów_zarezerwowanych1 { get => Ilość_samochodów_zarezerwowanych; set => Ilość_samochodów_zarezerwowanych = value; }
-        
-        public virtual void rezerwuj(samochody s)
+
+        public virtual void rezerwuj(samochody s, klient K)
         {
             s.Rezerwacja = rezerw.Zarezerwowany;
+            s.Rezerwujacy = K.Numer_klienta;
             Ilość_samochodów_do_wypożyczenia--;
             Ilość_samochodów_zarezerwowanych++;
         }
-        public samochody wybór_samochodu_do_rezerwacji(oferta s)
+        public samochody wybór_samochodu_do_rezerwacji(oferta s, klient K)
         {
             samochody k = new samochody();
             string wybór;
@@ -34,7 +35,7 @@ namespace po_projekt
                     if (wybór == "TAK")
                     {
                         k = element;
-                        rezerwuj(k);
+                        rezerwuj(k, K);
                         break;
                     }
                     else

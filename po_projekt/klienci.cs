@@ -25,7 +25,7 @@ namespace po_projekt
             Klienci.Remove(k);
             Liczba_klientów--;
         }
-        public object sprawdzenie(klient k)
+        public bool sprawdzenie(klient k)
         {
             klient wynik = new klient();
             foreach (klient element in Klienci)
@@ -33,13 +33,13 @@ namespace po_projekt
                 if (element.Numer_klienta == k.Numer_klienta)
                 {
                     wynik = element;
+                    return true;
                 }
             }
-            return wynik;
+            return false;
         }
         public void Zapisz_Klientów_XML(string nazwa, klienci k)
         {
-
             XmlSerializer serializer = new XmlSerializer(typeof(klienci));
             StreamWriter writer = new StreamWriter(nazwa);
             serializer.Serialize(writer, k);
@@ -59,7 +59,7 @@ namespace po_projekt
         public override string ToString()
         {
             int count = 0;
-            Console.WriteLine("Liczba klientów: "+ liczba_klientów +"\n");
+            Console.WriteLine("Liczba klientów: " + liczba_klientów + "\n");
             foreach (klient element in Klienci)
             {
                 count++;

@@ -50,7 +50,7 @@ namespace po_projekt
         {
             Console.WriteLine("Zalogowano jako pracownik.\n");
 
-            return "Identyfikator  : " + this.identyfikator +"\nStanowisko: " + stanowisko +  base.ToString();
+            return "Identyfikator  : " + this.identyfikator + "\nStanowisko: " + stanowisko + base.ToString();
         }
     }
 }

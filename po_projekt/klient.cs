@@ -33,11 +33,25 @@ namespace po_projekt
             Pesel = pESEL ?? throw new ArgumentNullException(nameof(pESEL));
             Numer_klienta = Numer_klienta ?? throw new ArgumentNullException(nameof(Numer_klienta));
         }
-    
+
+        public void Rezerwacje_klienta(oferta s)
+        {
+            Console.WriteLine("Twoja lista zarezerwowanych aut");
+            foreach (samochody element in s.Oferta)
+            {
+                if (element.Rezerwujacy == this.Numer_klienta)
+                {
+                    Console.WriteLine(element);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+        }
+
         public override string ToString()
         {
-            Console.WriteLine("Zalogowano jako klient.\n");
-
             return "numer_klienta  : " + this.Numer_klienta + base.ToString();
         }
     }
