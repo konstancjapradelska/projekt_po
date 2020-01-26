@@ -258,9 +258,48 @@ namespace po_projekt
                                             Console.WriteLine("Proszę wybrać klasę A, B, C, D, E, F, G, H, I lub K");
                                     }
                                     while ((klasa != "A") || (klasa != "B") || (klasa != "C") || (klasa != "D") || (klasa != "E") || (klasa != "F") || (klasa != "G") || (klasa != "H") || (klasa != "I") || (klasa != "K"));
-
-                                    Console.WriteLine("Wprowadź markę:\n");
-                                    d.Marka1 = Console.ReadLine();
+                                    string marka;
+                                    Console.WriteLine("Wprowadź markę samochodu:\n");
+                                    do
+                                    {
+                                        marka = Console.ReadLine();
+                                        if (marka == "Alfa Romeo")
+                                        { d.Marka1 = samochody.marka.Alfa_Romeo; break; }
+                                        if (marka == "Audi")
+                                        { d.Marka1 = samochody.marka.Audi; break; }
+                                        if (marka == "BMW")
+                                        { d.Marka1 = samochody.marka.BMW; break; }
+                                        if (marka == "Chevrolet")
+                                        { d.Marka1 = samochody.marka.Chevrolet; break; }
+                                        if (marka == "Chrysler")
+                                        { d.Marka1 = samochody.marka.Chrysler; break; }
+                                        if (marka == "Citroen")
+                                        { d.Marka1 = samochody.marka.Citroen; break; }
+                                        if (marka == "Fiat")
+                                        { d.Marka1 = samochody.marka.Fiat; break; }
+                                        if (marka == "Ford")
+                                        { d.Marka1 = samochody.marka.Ford; break; }
+                                        if (marka == "Honda")
+                                        { d.Marka1 = samochody.marka.Honda; break; }
+                                        if (marka == "Hyundai")
+                                        { d.Marka1 = samochody.marka.Hyundai; break; }
+                                        if (marka == "Kia")
+                                        { d.Marka1 = samochody.marka.Kia; break; }
+                                        if (marka == "Opel")
+                                        { d.Marka1 = samochody.marka.Opel; break; }
+                                        if (marka == "Porshe")
+                                        { d.Marka1 = samochody.marka.Porshe; break; }
+                                        if (marka == "Renault")
+                                        { d.Marka1 = samochody.marka.Renault; break; }
+                                        if (marka == "Skoda")
+                                        { d.Marka1 = samochody.marka.Skoda; break; }
+                                        else
+                                            Console.WriteLine("Proszę wybrać markę: Alfa_Romeo, Audi, BMW, Chevrolet, Chrysler, Citroen, Fiat, Ford, Honda, Hyundai, Kia, Opel, Porshe, Renault lub Skoda");
+                                    }
+                                    while ((marka != "Alfa Romeo") || (marka != "Audi") || (marka != "BMW") || (marka != "Chevrolet") ||
+                                           (marka != "Chrysler") || (marka != "Citroen") || (marka != "Fiat") || (marka != "Ford") ||
+                                           (marka != "Honda") || (marka != "Hyundai") || (marka != "Kia") || (marka != "Opel") ||
+                                           (marka != "Porshe") || (marka != "Renault") || (marka != "Skoda"));
                                     Console.WriteLine("Wprowadź model:\n");
                                     d.Model1 = Console.ReadLine();
                                     string silnik;

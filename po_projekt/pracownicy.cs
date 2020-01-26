@@ -11,7 +11,7 @@ namespace po_projekt
     /// <summary>
     /// Klasa opisująca pracowników.
     /// </summary>
-    class pracownicy
+    public class pracownicy
     {
         /// <summary>
         /// Lista pracowników.
