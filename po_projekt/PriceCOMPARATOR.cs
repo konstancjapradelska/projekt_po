@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace po_projekt
 {
     /// <summary>
-    /// Klasa porównująca modele samochodów.
+    /// Klasa porównująca ceny samochodów.
     /// </summary>
     /// <seealso cref="System.Collections.Generic.IComparer{po_projekt.samochody}" />
-    class ModelCOMPARATOR : IComparer<samochody>
+    class PriceCOMPARATOR : IComparer<samochody>
     {
         /// <summary>
         /// Porównuje dwa obiekty i zwraca tą wartość która jest większa, równa lub większa od tej drugiej.
@@ -32,7 +32,7 @@ namespace po_projekt
         {
             if (x != null && y != null)
             {
-                return x.Model1.CompareTo(y.Model1);
+                return x.Cena1.CompareTo(y.Cena1);
             }
             else
                 return 0;

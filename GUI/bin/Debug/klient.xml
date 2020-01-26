@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <klient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Imie>Radosław</Imie>
-  <Nazwisko>Leszczyński</Nazwisko>
-  <Pesel>93112225023</Pesel>
-  <Numer_klienta>203</Numer_klienta>
+  <Imie>Witold</Imie>
+  <Nazwisko>Adamski</Nazwisko>
+  <Pesel>90070142412</Pesel>
+  <Numer_klienta>200</Numer_klienta>
 </klient>

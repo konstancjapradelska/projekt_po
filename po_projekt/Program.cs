@@ -5,21 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace po_projekt
+
 {
+    /// <summary>
+    /// Klasa opisująca program.
+    /// </summary>
+
     class Program
     {
         static void Main(string[] args)
         {
             #region baza samochodow
             oferta Oferta = new oferta();
-            samochody s1 = new samochody { Klasa1 = samochody.klasa.klasa_A, Marka1 = "Fiat", Model1 = "Panda", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.manualna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback };
-            samochody s2 = new samochody { Klasa1 = samochody.klasa.klasa_B, Marka1 = "Opel", Model1 = "Corsa", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.manualna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback };
-            samochody s3 = new samochody { Klasa1 = samochody.klasa.klasa_C, Marka1 = "Kia", Model1 = "Ceed", Silnik1 = samochody.silnik.diesel, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.combi };
-            samochody s4 = new samochody { Klasa1 = samochody.klasa.klasa_C, Marka1 = "Kia", Model1 = "Ceed", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.manualna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback };
-            samochody s5 = new samochody { Klasa1 = samochody.klasa.klasa_D, Marka1 = "Kia", Model1 = "Optima", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.manualna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.combi };
-            samochody s6 = new samochody { Klasa1 = samochody.klasa.klasa_D, Marka1 = "Kia", Model1 = "Optima", Silnik1 = samochody.silnik.diesel, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback };
-            samochody s7 = new samochody { Klasa1 = samochody.klasa.klasa_E, Marka1 = "BMW", Model1 = "525", Silnik1 = samochody.silnik.diesel, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.sedan };
-            samochody s8 = new samochody { Klasa1 = samochody.klasa.klasa_E, Marka1 = "BMW", Model1 = "550", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.combi };
+            samochody s1 = new samochody { Klasa1 = samochody.klasa.A, Podział_cenowy1 = samochody.podział_cenowy.tani, Marka1 = samochody.marka.Fiat, Model1 = "Panda", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.manualna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback, Rok_produkcji1 = 1999 };
+            samochody s2 = new samochody { Klasa1 = samochody.klasa.B, Podział_cenowy1 = samochody.podział_cenowy.popularny, Marka1 = samochody.marka.Opel, Model1 = "Corsa", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.manualna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback, Rok_produkcji1 = 2000 };
+            samochody s3 = new samochody { Klasa1 = samochody.klasa.C, Podział_cenowy1 = samochody.podział_cenowy.popularny, Marka1 = samochody.marka.Kia, Model1 = "Ceed", Silnik1 = samochody.silnik.diesel, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.combi, Rok_produkcji1 = 2006 };
+            samochody s4 = new samochody { Klasa1 = samochody.klasa.C, Podział_cenowy1 = samochody.podział_cenowy.popularny, Marka1 = samochody.marka.Kia, Model1 = "Ceed", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.manualna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback, Rok_produkcji1 = 2010 };
+            samochody s5 = new samochody { Klasa1 = samochody.klasa.D, Podział_cenowy1 = samochody.podział_cenowy.popularny, Marka1 = samochody.marka.Kia, Model1 = "Optima", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.manualna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.combi, Rok_produkcji1 = 2002 };
+            samochody s6 = new samochody { Klasa1 = samochody.klasa.D, Podział_cenowy1 = samochody.podział_cenowy.popularny, Marka1 = samochody.marka.Kia, Model1 = "Optima", Silnik1 = samochody.silnik.diesel, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.sedan, Rok_produkcji1 = 1995 };
+            samochody s7 = new samochody { Klasa1 = samochody.klasa.E, Podział_cenowy1 = samochody.podział_cenowy.sportowy, Marka1 = samochody.marka.BMW, Model1 = "525", Silnik1 = samochody.silnik.diesel, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.sedan, Rok_produkcji1 = 2007 };
+            samochody s8 = new samochody { Klasa1 = samochody.klasa.E, Podział_cenowy1 = samochody.podział_cenowy.luksusowy, Marka1 = samochody.marka.BMW, Model1 = "550", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.combi, Rok_produkcji1 = 2008 };
+            samochody s9 = new samochody { Klasa1 = samochody.klasa.E, Podział_cenowy1 = samochody.podział_cenowy.tani, Marka1 = samochody.marka.Citroen, Model1 = "C6", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.fastback, Rok_produkcji1 = 2011 };
+            samochody s10 = new samochody { Klasa1 = samochody.klasa.E, Podział_cenowy1 = samochody.podział_cenowy.sportowy, Marka1 = samochody.marka.Porshe, Model1 = "Panamera", Silnik1 = samochody.silnik.benzynowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.sedan, Rok_produkcji1 = 2011 };
+            samochody s11 = new samochody { Klasa1 = samochody.klasa.G, Podział_cenowy1 = samochody.podział_cenowy.sportowy, Marka1 = samochody.marka.Porshe, Model1 = "Panamera Turbo", Silnik1 = samochody.silnik.hybrydowy, Skrzynia_Biegów1 = samochody.skrzynia_biegów.automatyczna, Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.sedan, Rok_produkcji1 = 2019 };
+
+            s1.Wycena();
+            s2.Wycena();
+            s3.Wycena();
+            s4.Wycena();
+            s5.Wycena();
+            s6.Wycena();
+            s7.Wycena();
+            s8.Wycena();
+            s9.Wycena();
+            s10.Wycena();
+            s11.Wycena();
 
             Oferta.Dodaj(s1);
             Oferta.Dodaj(s2);
@@ -29,9 +49,11 @@ namespace po_projekt
             Oferta.Dodaj(s6);
             Oferta.Dodaj(s7);
             Oferta.Dodaj(s8);
+            Oferta.Dodaj(s9);
+            Oferta.Dodaj(s10);
+            Oferta.Dodaj(s11);
             oferta.ZapiszXML("zapis.xml", Oferta);
             #endregion
-
             #region baza pracowników
             pracownik p1 = new pracownik { Imie = "Jan", Nazwisko = "Janowski", Pesel = "82080328496", Identyfikator = "100", Stanowisko1 = pracownik.Stanowisko.kierownik };
             pracownik p2 = new pracownik { Imie = "Beata", Nazwisko = "Jurkiewicz", Pesel = "92102201347", Identyfikator = "101", Stanowisko1 = pracownik.Stanowisko.zwykły_pracownik };
@@ -47,7 +69,6 @@ namespace po_projekt
             Pracownicy.Dodaj(p5);
 
             #endregion
-
             #region baza klientów
             klient k1 = new klient { Imie = "Witold", Nazwisko = "Adamski", Pesel = "90070142412", Numer_klienta = "200" };
             klient k2 = new klient { Imie = "Paulina", Nazwisko = "Szymańska", Pesel = "92102266738", Numer_klienta = "201" };
@@ -129,7 +150,10 @@ namespace po_projekt
                                 }
                                 else if (wybór_sortowania == "cena")
                                 {
-                                    Console.WriteLine("opcja do dodania");
+                                    Console.WriteLine("SORTOWANIE PO CENIE:");
+                                    Oferta.Sortuj_po_cenie();
+                                    Console.WriteLine(Oferta);
+
                                 }
                                 else if (wybór_sortowania == "koniec")
                                     break;
@@ -211,19 +235,30 @@ namespace po_projekt
                                     {
                                         klasa = Console.ReadLine();
                                         if (klasa == "A")
-                                        { d.Klasa1 = samochody.klasa.klasa_A; break; }
+                                        { d.Klasa1 = samochody.klasa.A; break; }
                                         if (klasa == "B")
-                                        { d.Klasa1 = samochody.klasa.klasa_B; break; }
+                                        { d.Klasa1 = samochody.klasa.B; break; }
                                         if (klasa == "C")
-                                        { d.Klasa1 = samochody.klasa.klasa_C; break; }
+                                        { d.Klasa1 = samochody.klasa.C; break; }
                                         if (klasa == "D")
-                                        { d.Klasa1 = samochody.klasa.klasa_D; break; }
+                                        { d.Klasa1 = samochody.klasa.D; break; }
                                         if (klasa == "E")
-                                        { d.Klasa1 = samochody.klasa.klasa_E; break; }
+                                        { d.Klasa1 = samochody.klasa.E; break; }
+                                        if (klasa == "F")
+                                        { d.Klasa1 = samochody.klasa.F; break;}
+                                        if (klasa == "G")
+                                        { d.Klasa1 = samochody.klasa.G; break;}
+                                        if (klasa == "H")
+                                        { d.Klasa1 = samochody.klasa.H; break;}
+                                        if (klasa == "I")
+                                        { d.Klasa1 = samochody.klasa.I; break;}
+                                        if (klasa == "K")
+                                        { d.Klasa1 = samochody.klasa.K; break;}
                                         else
-                                            Console.WriteLine("Proszę wybrać klasę A lub B lub C lub D lub E");
+                                            Console.WriteLine("Proszę wybrać klasę A, B, C, D, E, F, G, H, I lub K");
                                     }
-                                    while ((klasa != "A") || (klasa != "B") || (klasa != "C") || (klasa != "D") || (klasa != "E"));
+                                    while ((klasa != "A") || (klasa != "B") || (klasa != "C") || (klasa != "D") || (klasa != "E") || (klasa != "F") || (klasa != "G") || (klasa != "H") || (klasa != "I") || (klasa != "K"));
+
                                     Console.WriteLine("Wprowadź markę:\n");
                                     d.Marka1 = Console.ReadLine();
                                     Console.WriteLine("Wprowadź model:\n");
@@ -237,11 +272,15 @@ namespace po_projekt
                                         { d.Silnik1 = samochody.silnik.benzynowy; break; }
                                         if (silnik == "diesel")
                                         { d.Silnik1 = samochody.silnik.diesel; break; }
+                                        if (silnik == "elektryczny")
+                                        { d.Silnik1 = samochody.silnik.elektryczny; break; }
+                                        if (silnik == "hybrydowy")
+                                        { d.Silnik1 = samochody.silnik.hybrydowy; break; }
                                         else
-                                            Console.WriteLine("Proszę wybrać silnik benzynowy lub diesel");
+                                            Console.WriteLine("Proszę wybrać silnik benzynowy, diesel, elektryczny lub hybrydowy");
 
                                     }
-                                    while (silnik != "benzynowy" || silnik != "diesel");
+                                    while (silnik != "benzynowy" || silnik != "diesel" || silnik != "elektryczny" || silnik != "hybrydowy");
                                     string skrzynia;
                                     Console.WriteLine("Wprowadź rodzaj skrzynii biegów: \n");
                                     do
@@ -257,7 +296,7 @@ namespace po_projekt
                                     }
                                     while (skrzynia != "automatyczna" || skrzynia != "manualna");
                                     string nadwozie;
-                                    Console.WriteLine("Wprowadzać rodzaj nadwozia:\n");
+                                    Console.WriteLine("Wprowadź rodzaj nadwozia:\n");
                                     do
                                     {
                                         nadwozie = Console.ReadLine();
@@ -267,11 +306,21 @@ namespace po_projekt
                                         { d.Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.hatchback; break; }
                                         if (nadwozie == "sedan")
                                         { d.Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.sedan; break; }
+                                        if (nadwozie == "fastback")
+                                        { d.Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.fastback; break; }
+                                        if (nadwozie == "coupe")
+                                        { d.Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.coupe; break; }
+                                        if (nadwozie == "kabriolet")
+                                        { d.Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.kabriolet; break; }
+                                        if (nadwozie == "liftback")
+                                        { d.Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.liftback; break; }
+                                        if (nadwozie == "pickup")
+                                        { d.Rodzaj_Nadwozia1 = samochody.rodzaj_nadwozia.pickup; break; }
                                         else
-                                            Console.WriteLine("Proszę wybrać rodzaj nadwozia combi lub hatchback lub combi");
+                                            Console.WriteLine("Proszę wybrać rodzaj nadwozia combi, hatchback, sedan, fastback, coupe, kabriolet, liftback lub pickup");
 
                                     }
-                                    while ((nadwozie != "combi") || (nadwozie != "hatchback") || (nadwozie != "sedan"));
+                                    while ((nadwozie != "combi") || (nadwozie != "hatchback") || (nadwozie != "sedan") || (nadwozie != "fastback") || (nadwozie != "coupe") || (nadwozie != "kabriolet") || (nadwozie != "liftback") || (nadwozie != "pickup"));
 
                                     Oferta.Dodaj(d);
 
@@ -309,7 +358,9 @@ namespace po_projekt
                                         }
                                         else if (wybór_sortowania == "cena")
                                         {
-                                            Console.WriteLine("opcja do dodania");
+                                            Console.WriteLine("SORTOWANIE PO CENIE:");
+                                            Oferta.Sortuj_po_cenie();
+                                            Console.WriteLine(Oferta);
                                         }
 
                                         else if (wybór_sortowania == "koniec")
@@ -323,12 +374,10 @@ namespace po_projekt
                                 }
                                 else if (wybór == "dodajk")
                                 {
-
                                     Klienci.Zapisz_Klientów_XML("klienci.xml", Klienci);
                                 }
                                 else if (wybór == "usuńk")
                                 {
-
                                     Klienci.Zapisz_Klientów_XML("klienci.xml", Klienci);
                                 }
                                 if (P.Stanowisko1 == pracownik.Stanowisko.kierownik)
@@ -399,20 +448,6 @@ namespace po_projekt
                 }
             }
             while (opcja != "koniec");
-            Klienci = Klienci.Odczytaj_Klientów_XML("klienci.xml") as klienci;
-            Console.WriteLine(Klienci);
-            //#region serializacja
-            //oferta.ZapiszXML("zapis.xml", Oferta);
-            //Oferta = Oferta.OdczytajXML("zapis.xml") as oferta;
-            //Console.WriteLine(Oferta);
-
-            //#endregion
-            //Console.WriteLine("SORTOWANIE PO KLASIE:");
-            //Oferta.Sortuj_po_klasie_samochodu();
-            //Console.WriteLine(Oferta);
-            //Console.WriteLine("SORTOWANIE PO MODELU:");
-            //Oferta.Sortuj_po_modelu_samochodu();
-            //Console.WriteLine(Oferta);
             Console.ReadKey();
         }
 

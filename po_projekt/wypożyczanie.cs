@@ -6,14 +6,31 @@ using System.Threading.Tasks;
 
 namespace po_projekt
 {
+    /// <summary>
+    /// Klasa opsująca wypożyczenia.
+    /// </summary>
+    /// <seealso cref="po_projekt.oferta" />
     class wypożyczanie : oferta
     {
+        /// <summary>
+        /// Wypożyczanie samochodu z oferty.
+        /// </summary>
+        /// <param name="s">Parametr s pozwala na przekazywanie oraz zwracanie danych z metody.</param>
+        /// <param name="o">Parametr o pozwala na przekazywanie oraz zwracanie danych z metody.</param>
+
         public virtual void wypożycz(samochody s, oferta o)
         {
             Console.WriteLine("Wypożyczono samochód:");
             Console.WriteLine(s);
             o.Usuń(s);
         }
+        /// <summary>
+        /// Wybór samochodu do wypożyczenia.
+        /// </summary>
+        /// <param name="s">Parametr s pozwala na przekazywanie oraz zwracanie danych z metody.</param>
+        /// <param name="K">Parametr K pozwala na przekazywanie oraz zwracanie danych z metody.</param>
+        /// <returns>Zwraca parametr k.</returns>
+
         public samochody wybór_samochodu_do_wypożyczenia(oferta s, klient K)
         {
             samochody k = new samochody();

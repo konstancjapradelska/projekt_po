@@ -6,12 +6,14 @@
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
         Title="Oferta" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="0,0,3.6,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="46*"/>
             <ColumnDefinition Width="41*"/>
             <ColumnDefinition Width="707*"/>
-        </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions> 
+        <Label Content="                                    OFERTA" Grid.Column="2" HorizontalAlignment="Left" Height="52" Margin="169.6,10,0,0" VerticalAlignment="Top" Width="292"/>
+        <ListBox x:Name="listbox_oferta_window" Grid.Column="2" HorizontalAlignment="Left" Height="247" Margin="38.6,91,0,0" VerticalAlignment="Top" Width="585"/>
 
     </Grid>
 </Window>

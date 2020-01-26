@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,14 @@ namespace GUI
         public Oferta_Window()
         {
             InitializeComponent();
+        
+            oferta Oferta = new oferta();
+            Oferta = Oferta.OdczytajXML("zapis.xml") as oferta;
+
+            ObservableCollection<samochody> lista;
+            lista = new ObservableCollection<samochody>(Oferta.Oferta);
+            listbox_oferta_window.ItemsSource = lista;
+            
         }
     }
 }
