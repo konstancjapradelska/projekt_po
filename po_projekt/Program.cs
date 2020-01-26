@@ -149,19 +149,24 @@ namespace po_projekt
                                     Console.WriteLine("SORTOWANIE PO KLASIE:");
                                     Oferta.Sortuj_po_klasie_samochodu();
                                     Console.WriteLine(Oferta);
+                                    Console.ReadKey();
+                                    break;
                                 }
                                 else if (wybór_sortowania == "model")
                                 {
                                     Console.WriteLine("SORTOWANIE PO MODELU:");
                                     Oferta.Sortuj_po_modelu_samochodu();
                                     Console.WriteLine(Oferta);
+                                    Console.ReadKey();
+                                    break;
                                 }
                                 else if (wybór_sortowania == "cena")
                                 {
                                     Console.WriteLine("SORTOWANIE PO CENIE:");
                                     Oferta.Sortuj_po_cenie();
                                     Console.WriteLine(Oferta);
-
+                                    Console.ReadKey();
+                                    break;
                                 }
                                 else if (wybór_sortowania == "koniec")
                                     break;
