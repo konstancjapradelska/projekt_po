@@ -103,7 +103,18 @@ namespace po_projekt
         public samochody()
         {
         }
-
+        public samochody(klasa klasa, podział_cenowy podział_cenowy, marka marka, silnik silnik, skrzynia_biegów skrzynia_Biegów, rodzaj_nadwozia rodzaj_Nadwozia, int rok_produkcji)
+        {
+            Klasa = klasa;
+            Rok_produkcji = rok_produkcji;
+            Podział_cenowy = podział_cenowy;
+            Marka = marka;
+            Silnik = silnik;
+            Skrzynia_Biegów = skrzynia_Biegów;
+            Rodzaj_Nadwozia = rodzaj_Nadwozia;
+            Rezerwacja = rezerw.Niezarezerwowany;
+            Rezerwujacy = null;
+        }
         /// <summary>
         /// Inicjalizuje nową instancję <see cref="samochody"/> klasy.
         /// </summary>

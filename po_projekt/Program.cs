@@ -348,7 +348,7 @@ namespace po_projekt
                                     }
                                     while (silnik != "benzynowy" || silnik != "diesel" || silnik != "elektryczny" || silnik != "hybrydowy");
                                     string skrzynia;
-                                    Console.WriteLine("Wprowadź rodzaj skrzynii biegów: \n");
+                                    Console.WriteLine("Wprowadź rodzaj skrzyni biegów: \n");
                                     do
                                     {
                                         skrzynia = Console.ReadLine();
@@ -387,7 +387,40 @@ namespace po_projekt
 
                                     }
                                     while ((nadwozie != "combi") || (nadwozie != "hatchback") || (nadwozie != "sedan") || (nadwozie != "fastback") || (nadwozie != "coupe") || (nadwozie != "kabriolet") || (nadwozie != "liftback") || (nadwozie != "pickup"));
+                                    int rok_produkcji;
+                                    Console.WriteLine("Wprowadź rok produkcji: \n");
+                                    do
+                                    {
+                                        rok_produkcji = int.Parse(Console.ReadLine());
+                                        if (rok_produkcji > 1900)
+                                        { d.Rok_produkcji1 = rok_produkcji; break; }
+                                        else
+                                            Console.WriteLine("Proszę wprowadzić poprawną datę produkcji samochodu!");
+                                    }
+                                    while (rok_produkcji <= 1900);
+                                    string podział_cenowy;
+                                    Console.WriteLine("Wprowadź podział ze względu na cenę:\n");
+                                    do
+                                    {
+                                        podział_cenowy = Console.ReadLine();
+                                        if (podział_cenowy == "tani")
+                                        { d.Podział_cenowy1 = samochody.podział_cenowy.tani; break; }
+                                        if (podział_cenowy == "popularny")
+                                        { d.Podział_cenowy1 = samochody.podział_cenowy.popularny; break; }
+                                        if (podział_cenowy == "luksusowy")
+                                        { d.Podział_cenowy1 = samochody.podział_cenowy.luksusowy; break; }
+                                        if (podział_cenowy == "sportowy")
+                                        { d.Podział_cenowy1 = samochody.podział_cenowy.sportowy; break; }
+                                        if (podział_cenowy == "superluksusowy")
+                                        { d.Podział_cenowy1 = samochody.podział_cenowy.superluksusowy; break; }
+                                        if (podział_cenowy == "supersportowy")
+                                        { d.Podział_cenowy1 = samochody.podział_cenowy.supersportowy; break; }
+                                        else
+                                            Console.WriteLine("Proszę wybrać podział tani, popularny, luksusowy, sportowy, superluksusowy lub  supersportowy");
 
+                                    }
+                                    while (podział_cenowy != "tani" || podział_cenowy != "popularny" || podział_cenowy != "luksusowy" || podział_cenowy != "sportowy" || podział_cenowy != "superluksusowy" || podział_cenowy != "supersportowy");
+                                    d.Wycena();
                                     Oferta.Dodaj(d);
 
                                     oferta.ZapiszXML("zapis.xml", Oferta);

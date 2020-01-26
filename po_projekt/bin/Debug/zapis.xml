@@ -143,4 +143,17 @@
     <Model1>Panamera Turbo</Model1>
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
+  <samochody>
+    <mnożnik>3.5999999999999996</mnożnik>
+    <Cena1>197999</Cena1>
+    <Rok_produkcji1>2015</Rok_produkcji1>
+    <Klasa1>E</Klasa1>
+    <Podział_cenowy1>luksusowy</Podział_cenowy1>
+    <Marka1>Audi</Marka1>
+    <Silnik1>diesel</Silnik1>
+    <Skrzynia_Biegów1>automatyczna</Skrzynia_Biegów1>
+    <Rodzaj_Nadwozia1>sedan</Rodzaj_Nadwozia1>
+    <Model1>A8</Model1>
+    <Rezerwacja>Niezarezerwowany</Rezerwacja>
+  </samochody>
 </ArrayOfSamochody>
