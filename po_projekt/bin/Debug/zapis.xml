@@ -11,8 +11,7 @@
     <Skrzynia_Biegów1>manualna</Skrzynia_Biegów1>
     <Rodzaj_Nadwozia1>hatchback</Rodzaj_Nadwozia1>
     <Model1>Panda</Model1>
-    <Rezerwacja>Zarezerwowany</Rezerwacja>
-    <Rezerwujacy>202</Rezerwujacy>
+    <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
   <samochody>
     <mnożnik>0.6</mnożnik>

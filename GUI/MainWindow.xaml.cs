@@ -21,6 +21,11 @@ namespace GUI
     /// </summary>
     public partial class MainWindow : Window
     {
+        private void MoveBottomRightEdgeOfWindow()
+        {
+            Left = Application.Current.MainWindow.Left;
+            Top = Application.Current.MainWindow.Top;
+        }
         public MainWindow()
         {
             InitializeComponent();

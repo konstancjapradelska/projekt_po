@@ -20,6 +20,11 @@ namespace GUI
     /// </summary>
     public partial class Klient_Menu_Window : Window
     {
+        private void MoveBottomRightEdgeOfWindow()
+        {
+            Left = Application.Current.MainWindow.Left;
+            Top = Application.Current.MainWindow.Top;
+        }
         public Klient_Menu_Window()
         {
             InitializeComponent();

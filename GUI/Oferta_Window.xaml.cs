@@ -21,6 +21,11 @@ namespace GUI
     /// </summary>
     public partial class Oferta_Window : Window
     {
+        private void MoveBottomRightEdgeOfWindow()
+        {
+            Left = Application.Current.MainWindow.Left;
+            Top = Application.Current.MainWindow.Top;
+        }
         public Oferta_Window()
         {
             InitializeComponent();

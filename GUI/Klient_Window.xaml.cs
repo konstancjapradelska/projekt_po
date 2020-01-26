@@ -23,7 +23,11 @@ namespace GUI
         klient klient_Window = new klient();
         ObservableCollection<klient> lista_klientów;
         klienci Klienci = new klienci();
-        
+        private void MoveBottomRightEdgeOfWindow()
+        {
+            Left = Application.Current.MainWindow.Left;
+            Top = Application.Current.MainWindow.Top;
+        }
         public Klient_Window()
         {
             InitializeComponent();

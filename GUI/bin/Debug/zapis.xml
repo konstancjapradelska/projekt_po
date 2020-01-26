@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfSamochody xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <samochody>
-    <Klasa1>klasa_A</Klasa1>
+    <mnożnik>0.6</mnożnik>
+    <Cena1>12000</Cena1>
+    <Rok_produkcji1>1999</Rok_produkcji1>
+    <Klasa1>A</Klasa1>
+    <Podział_cenowy1>tani</Podział_cenowy1>
     <Marka1>Fiat</Marka1>
     <Silnik1>benzynowy</Silnik1>
     <Skrzynia_Biegów1>manualna</Skrzynia_Biegów1>
@@ -10,7 +14,11 @@
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
   <samochody>
-    <Klasa1>klasa_B</Klasa1>
+    <mnożnik>0.6</mnożnik>
+    <Cena1>20400</Cena1>
+    <Rok_produkcji1>2000</Rok_produkcji1>
+    <Klasa1>B</Klasa1>
+    <Podział_cenowy1>popularny</Podział_cenowy1>
     <Marka1>Opel</Marka1>
     <Silnik1>benzynowy</Silnik1>
     <Skrzynia_Biegów1>manualna</Skrzynia_Biegów1>
@@ -19,7 +27,11 @@
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
   <samochody>
-    <Klasa1>klasa_C</Klasa1>
+    <mnożnik>0.8</mnożnik>
+    <Cena1>20000</Cena1>
+    <Rok_produkcji1>2006</Rok_produkcji1>
+    <Klasa1>C</Klasa1>
+    <Podział_cenowy1>popularny</Podział_cenowy1>
     <Marka1>Kia</Marka1>
     <Silnik1>diesel</Silnik1>
     <Skrzynia_Biegów1>automatyczna</Skrzynia_Biegów1>
@@ -28,7 +40,11 @@
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
   <samochody>
-    <Klasa1>klasa_C</Klasa1>
+    <mnożnik>1.2000000000000002</mnożnik>
+    <Cena1>30000</Cena1>
+    <Rok_produkcji1>2010</Rok_produkcji1>
+    <Klasa1>C</Klasa1>
+    <Podział_cenowy1>popularny</Podział_cenowy1>
     <Marka1>Kia</Marka1>
     <Silnik1>benzynowy</Silnik1>
     <Skrzynia_Biegów1>manualna</Skrzynia_Biegów1>
@@ -37,7 +53,11 @@
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
   <samochody>
-    <Klasa1>klasa_D</Klasa1>
+    <mnożnik>1.1</mnożnik>
+    <Cena1>27500</Cena1>
+    <Rok_produkcji1>2002</Rok_produkcji1>
+    <Klasa1>D</Klasa1>
+    <Podział_cenowy1>popularny</Podział_cenowy1>
     <Marka1>Kia</Marka1>
     <Silnik1>benzynowy</Silnik1>
     <Skrzynia_Biegów1>manualna</Skrzynia_Biegów1>
@@ -46,16 +66,24 @@
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
   <samochody>
-    <Klasa1>klasa_D</Klasa1>
+    <mnożnik>1.1</mnożnik>
+    <Cena1>27500</Cena1>
+    <Rok_produkcji1>1995</Rok_produkcji1>
+    <Klasa1>D</Klasa1>
+    <Podział_cenowy1>popularny</Podział_cenowy1>
     <Marka1>Kia</Marka1>
     <Silnik1>diesel</Silnik1>
     <Skrzynia_Biegów1>automatyczna</Skrzynia_Biegów1>
-    <Rodzaj_Nadwozia1>hatchback</Rodzaj_Nadwozia1>
+    <Rodzaj_Nadwozia1>sedan</Rodzaj_Nadwozia1>
     <Model1>Optima</Model1>
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
   <samochody>
-    <Klasa1>klasa_E</Klasa1>
+    <mnożnik>2.4</mnożnik>
+    <Cena1>168000</Cena1>
+    <Rok_produkcji1>2007</Rok_produkcji1>
+    <Klasa1>E</Klasa1>
+    <Podział_cenowy1>sportowy</Podział_cenowy1>
     <Marka1>BMW</Marka1>
     <Silnik1>diesel</Silnik1>
     <Skrzynia_Biegów1>automatyczna</Skrzynia_Biegów1>
@@ -64,12 +92,55 @@
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
   <samochody>
-    <Klasa1>klasa_E</Klasa1>
+    <mnożnik>1.7999999999999998</mnożnik>
+    <Cena1>125999</Cena1>
+    <Rok_produkcji1>2008</Rok_produkcji1>
+    <Klasa1>E</Klasa1>
+    <Podział_cenowy1>luksusowy</Podział_cenowy1>
     <Marka1>BMW</Marka1>
     <Silnik1>benzynowy</Silnik1>
     <Skrzynia_Biegów1>automatyczna</Skrzynia_Biegów1>
     <Rodzaj_Nadwozia1>combi</Rodzaj_Nadwozia1>
     <Model1>550</Model1>
+    <Rezerwacja>Niezarezerwowany</Rezerwacja>
+  </samochody>
+  <samochody>
+    <mnożnik>1.08</mnożnik>
+    <Cena1>24840</Cena1>
+    <Rok_produkcji1>2011</Rok_produkcji1>
+    <Klasa1>E</Klasa1>
+    <Podział_cenowy1>tani</Podział_cenowy1>
+    <Marka1>Citroen</Marka1>
+    <Silnik1>benzynowy</Silnik1>
+    <Skrzynia_Biegów1>automatyczna</Skrzynia_Biegów1>
+    <Rodzaj_Nadwozia1>fastback</Rodzaj_Nadwozia1>
+    <Model1>C6</Model1>
+    <Rezerwacja>Niezarezerwowany</Rezerwacja>
+  </samochody>
+  <samochody>
+    <mnożnik>3.5999999999999996</mnożnik>
+    <Cena1>323999</Cena1>
+    <Rok_produkcji1>2011</Rok_produkcji1>
+    <Klasa1>E</Klasa1>
+    <Podział_cenowy1>sportowy</Podział_cenowy1>
+    <Marka1>Porshe</Marka1>
+    <Silnik1>benzynowy</Silnik1>
+    <Skrzynia_Biegów1>automatyczna</Skrzynia_Biegów1>
+    <Rodzaj_Nadwozia1>sedan</Rodzaj_Nadwozia1>
+    <Model1>Panamera</Model1>
+    <Rezerwacja>Niezarezerwowany</Rezerwacja>
+  </samochody>
+  <samochody>
+    <mnożnik>6.4</mnożnik>
+    <Cena1>576000</Cena1>
+    <Rok_produkcji1>2019</Rok_produkcji1>
+    <Klasa1>G</Klasa1>
+    <Podział_cenowy1>sportowy</Podział_cenowy1>
+    <Marka1>Porshe</Marka1>
+    <Silnik1>hybrydowy</Silnik1>
+    <Skrzynia_Biegów1>automatyczna</Skrzynia_Biegów1>
+    <Rodzaj_Nadwozia1>sedan</Rodzaj_Nadwozia1>
+    <Model1>Panamera Turbo</Model1>
     <Rezerwacja>Niezarezerwowany</Rezerwacja>
   </samochody>
 </ArrayOfSamochody>

@@ -18,7 +18,11 @@ namespace GUI
     
     public partial class Pracownik_Menu_Window : Window
     {
-        
+        private void MoveBottomRightEdgeOfWindow()
+        {
+            Left = Application.Current.MainWindow.Left;
+            Top = Application.Current.MainWindow.Top;
+        }
 
         public Pracownik_Menu_Window()
         {

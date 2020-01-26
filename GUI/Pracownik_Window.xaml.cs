@@ -23,6 +23,11 @@ namespace GUI
         pracownik pracownik_Window = new pracownik();
         ObservableCollection<pracownik> lista_pracowników;
         pracownicy Pracownicy = new pracownicy();
+        private void MoveBottomRightEdgeOfWindow()
+        {
+            Left = Application.Current.MainWindow.Left;
+            Top = Application.Current.MainWindow.Top;
+        }
         public Pracownik_Window()
         {
             InitializeComponent();

@@ -19,6 +19,11 @@ namespace GUI
     /// </summary>
     public partial class Rezerwacja_Window : Window
     {
+        private void MoveBottomRightEdgeOfWindow()
+        {
+            Left = Application.Current.MainWindow.Left;
+            Top = Application.Current.MainWindow.Top;
+        }
         public Rezerwacja_Window()
         {
             InitializeComponent();
