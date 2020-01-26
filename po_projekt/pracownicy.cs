@@ -17,6 +17,18 @@ namespace po_projekt
         /// Lista pracowników.
         /// </summary>
         public List<pracownik> Pracownicy = new List<pracownik>();
+
+        public object Pobierz(string identyfikator)
+        {
+            pracownik k = new pracownik();
+            foreach (pracownik element in Pracownicy)
+            {
+                if (element.Identyfikator == identyfikator)
+                    return element;
+            }
+            return null;
+        }
+
         /// <summary>
         /// Metoda pozwalająca dodać pracownika.
         /// </summary>
@@ -39,7 +51,7 @@ namespace po_projekt
         /// <param name="p">Parametr p pozwala na przekazywanie oraz zwracanie danych z metody.</param>
         /// <returns>Klient występuje, bądź nie.</returns>
 
-        public object sprawdzenie(pracownik p)
+        public bool sprawdzenie(pracownik p)
         {
             pracownik wynik = new pracownik();
             foreach (pracownik element in Pracownicy)
@@ -47,9 +59,10 @@ namespace po_projekt
                 if (element.Identyfikator == p.Identyfikator)
                 {
                     wynik = element;
+                    return true;
                 }
             }
-            return wynik;
+            return false;
         }
 
         /// <summary>

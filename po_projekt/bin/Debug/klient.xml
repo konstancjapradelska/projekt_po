@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Imie>Błażej</Imie>
+  <Nazwisko>Tomaszewski</Nazwisko>
+  <Pesel>92051613915</Pesel>
+  <Numer_klienta>204</Numer_klienta>
+</klient>

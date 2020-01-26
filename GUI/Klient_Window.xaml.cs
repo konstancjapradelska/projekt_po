@@ -31,10 +31,10 @@ namespace GUI
         private void K_Button_Zatwierdź_Numer_Klienta_Click(object sender, RoutedEventArgs e)
         { 
             Klienci = Klienci.Odczytaj_Klientów_XML("klienci.xml") as klienci;
-
             lista_klientów = new ObservableCollection<klient>(Klienci.Klienci);
             bool numer = false;
             klient_Window.Numer_klienta = TextBox_Numer_Klienta.Text;
+
             numer = Klienci.sprawdzenie(klient_Window);
             Klient_Menu_Window klient_menu = new Klient_Menu_Window();
             if (numer)

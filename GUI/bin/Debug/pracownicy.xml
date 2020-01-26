@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pracownicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pracownicy>
+    <pracownik>
+      <Imie>Jan</Imie>
+      <Nazwisko>Janowski</Nazwisko>
+      <Pesel>82080328496</Pesel>
+      <Identyfikator>100</Identyfikator>
+    </pracownik>
+    <pracownik>
+      <Imie>Beata</Imie>
+      <Nazwisko>Jurkiewicz</Nazwisko>
+      <Pesel>92102201347</Pesel>
+      <Identyfikator>101</Identyfikator>
+    </pracownik>
+    <pracownik>
+      <Imie>Anna</Imie>
+      <Nazwisko>Dobrowolska</Nazwisko>
+      <Pesel>92031507772</Pesel>
+      <Identyfikator>102</Identyfikator>
+    </pracownik>
+    <pracownik>
+      <Imie>Jakub</Imie>
+      <Nazwisko>Grobelczyk</Nazwisko>
+      <Pesel> 90070100211</Pesel>
+      <Identyfikator>103</Identyfikator>
+    </pracownik>
+    <pracownik>
+      <Imie>Wiktor</Imie>
+      <Nazwisko>Jagielski</Nazwisko>
+      <Pesel> 92031532652</Pesel>
+      <Identyfikator>104</Identyfikator>
+    </pracownik>
+  </Pracownicy>
+</pracownicy>

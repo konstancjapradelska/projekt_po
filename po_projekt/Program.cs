@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace po_projekt
 
@@ -67,7 +69,7 @@ namespace po_projekt
             Pracownicy.Dodaj(p3);
             Pracownicy.Dodaj(p4);
             Pracownicy.Dodaj(p5);
-
+            Pracownicy.Zapisz_Pracowników_XML("pracownicy.xml", Pracownicy);
             #endregion
             #region baza klientów
             klient k1 = new klient { Imie = "Witold", Nazwisko = "Adamski", Pesel = "90070142412", Numer_klienta = "200" };
@@ -104,10 +106,16 @@ namespace po_projekt
                     {
                         Console.WriteLine("Proszę o wprowadzenie numeru klienta:");
                         k.Numer_klienta = Console.ReadLine();
-                        klient K = new klient();
-
                         if (Klienci.sprawdzenie(k))
+                        {
                             numer = true;
+                            k = Klienci.Pobierz(k.Numer_klienta) as klient;
+                            string nazwa = "klient.xml";
+                            XmlSerializer serializer = new XmlSerializer(typeof(klient));
+                            StreamWriter writer = new StreamWriter(nazwa);
+                            serializer.Serialize(writer, k);
+                            writer.Close();
+                        }
                         else
                             Console.WriteLine("\nWprowadzono niepoprawny numer.\n");
                     }
@@ -192,25 +200,39 @@ namespace po_projekt
                 {
                     Console.WriteLine("Wybrano opcję : pracownik");
                     pracownik p = new pracownik();
-                    Console.WriteLine("Proszę o wprowadzenie identyfikatora:");
-                    p.Identyfikator = Console.ReadLine();
-
+                    bool numer = false;
+                    do
+                    {
+                        Console.WriteLine("Proszę o wprowadzenie identyfikatora:");
+                        p.Identyfikator = Console.ReadLine();
+                        if (Pracownicy.sprawdzenie(p))
+                        {
+                            numer = true;
+                            p = Pracownicy.Pobierz(p.Identyfikator) as pracownik;
+                            string nazwa = "pracownik.xml";
+                            XmlSerializer serializer = new XmlSerializer(typeof(pracownik));
+                            StreamWriter writer = new StreamWriter(nazwa);
+                            serializer.Serialize(writer, p);
+                            writer.Close();
+                        }
+                        else
+                            Console.WriteLine("\nWprowadzono niepoprawny identyfikator.\n");
+                    }
+                    while (numer != true);
                     Console.WriteLine("Proszę o wprowadzenie hasła:");
                     string hasło;
                     do
                     {
-                        pracownik P = new pracownik();
-                        P = Pracownicy.sprawdzenie(p) as pracownik;
                         hasło = Console.ReadLine();
                         if (hasło == "programowanie")
                         {
                             Console.WriteLine("Poprawe hasło, zapraszamy.\n");
-                            Console.WriteLine("Zalogowano się do systemu jako:\n" + P);
+                            Console.WriteLine("Zalogowano się do systemu jako:\n" + p);
                             string wybór;
                             do
                             {
                                 Console.WriteLine("                                     MENU\n\n");
-                                if (P.Stanowisko1 == pracownik.Stanowisko.kierownik)
+                                if (p.Stanowisko1 == pracownik.Stanowisko.kierownik)
                                 {
                                     Console.WriteLine("                Jeżeli chcesz dodać pracownika wybierz: dodajp");
                                     Console.WriteLine("                Jeżeli chcesz usunąć pracownika wybierz: usuńp");
@@ -419,7 +441,7 @@ namespace po_projekt
                                 {
                                     Klienci.Zapisz_Klientów_XML("klienci.xml", Klienci);
                                 }
-                                if (P.Stanowisko1 == pracownik.Stanowisko.kierownik)
+                                if (p.Stanowisko1 == pracownik.Stanowisko.kierownik)
                                 {
                                     if (wybór == "dodajp")
                                     {
@@ -459,7 +481,6 @@ namespace po_projekt
                                         Console.WriteLine(Pracownicy);
                                     }
                                 }
-
                                 else if (wybór == "koniec")
                                     break;
                                 else
