@@ -55,11 +55,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Lista_Wypożyczeń_Window.xaml.cs">
+      <DependentUpon>Lista_Wypożyczeń_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rezerwacja_Window.xaml.cs">
+      <DependentUpon>Rezerwacja_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wypożyczanie_Window.xaml.cs">
+      <DependentUpon>Wypożyczanie_Window.xaml</DependentUpon>
+    </Compile>
     <Page Include="Klient_Menu_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Klient_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lista_Wypożyczeń_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -81,12 +94,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Oferta_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pracownik_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rezerwacja_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wypożyczanie_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Oferta_Window.xaml.cs">
+      <DependentUpon>Oferta_Window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pracownik_Window.xaml.cs">
       <DependentUpon>Pracownik_Window.xaml</DependentUpon>
     </Compile>

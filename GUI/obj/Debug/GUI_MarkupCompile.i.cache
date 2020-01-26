@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Konstancja\Documents\projekt_po\GUI\App.xaml
-4-1338542838
+8-1758590655
 
-12-526600257
+16-458646885
 14-788673298
-Klient_Menu_Window.xaml;Klient_Window.xaml;MainWindow.xaml;Pracownik_Window.xaml;
+Klient_Menu_Window.xaml;Klient_Window.xaml;Lista_Wypożyczeń_Window.xaml;MainWindow.xaml;Oferta_Window.xaml;Pracownik_Window.xaml;Rezerwacja_Window.xaml;Wypożyczanie_Window.xaml;
 
-True
+False
 

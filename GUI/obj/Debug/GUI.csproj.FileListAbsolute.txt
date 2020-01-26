@@ -46,3 +46,11 @@ C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI.Properties.Resources.
 C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Oferta_Window.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Oferta_Window.baml
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Lista_Wypożyczeń_Window.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Rezerwacja_Window.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Wypożyczanie_Window.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Lista_Wypożyczeń_Window.baml
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Rezerwacja_Window.baml
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Wypożyczanie_Window.baml

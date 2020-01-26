@@ -15,6 +15,16 @@ namespace po_projekt
 
         public int Liczba_klientów { get => liczba_klientów; set => liczba_klientów = value; }
 
+        public object Pobierz(string numer_klienta)
+        {
+            klient k = new klient();
+            foreach(klient element in Klienci)
+            {
+                if (element.Numer_klienta == numer_klienta)
+                    return element;
+            }
+             return null;
+        }
         public void Dodaj(klient k)
         {
             Klienci.Add(k);

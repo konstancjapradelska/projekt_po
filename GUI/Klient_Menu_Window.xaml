@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="Klient_Menu_Window" Height="450" Width="800">
+        Title="Klient_Menu_Window" Height="621.572" Width="1144.649">
     <Grid>
-        
+        <Label x:Name="label_Menu_klienta" Content="MENU" HorizontalAlignment="Left" Height="33" Margin="546,53,0,0" VerticalAlignment="Top" Width="47"/>
+        <Button x:Name="button_oferta" Content="OFERTA" HorizontalAlignment="Left" Height="76" Margin="122,144,0,0" VerticalAlignment="Top" Width="259" Click="Button_oferta_Click"/>
+        <Button x:Name="button_rezerwuj" Content="REZERWACJA" HorizontalAlignment="Left" Height="76" Margin="435,144,0,0" VerticalAlignment="Top" Width="262" Click="Button_rezerwuj_Click"/>
+        <Button x:Name="button_wypożycz" Content="WYPOŻYCZANIE" HorizontalAlignment="Left" Height="76" Margin="751,144,0,0" VerticalAlignment="Top" Width="259" Click="Button_wypożycz_Click"/>
+        <Button x:Name="button_lista_wypożyczeń" Content="LISTA WYPOŻYCZEŃ" HorizontalAlignment="Left" Height="87" Margin="248,278,0,0" VerticalAlignment="Top" Width="297" Click="Button_lista_wypożyczeń_Click"/>
+        <Button x:Name="button_koniec_klient" Content="WYJŚCIE" HorizontalAlignment="Left" Height="87" Margin="632,278,0,0" VerticalAlignment="Top" Width="271" Click="Button_koniec_klient_Click"/>
+
     </Grid>
 </Window>

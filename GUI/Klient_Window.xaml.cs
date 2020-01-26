@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
 using po_projekt;
 
 namespace GUI
@@ -32,13 +34,19 @@ namespace GUI
 
             lista_klientów = new ObservableCollection<klient>(Klienci.Klienci);
             bool numer = false;
-            TextBox_Numer_Klienta.Text = klient_Window.Numer_klienta;
-            string nk = klient_Window.Numer_klienta;
-            MessageBox.Show(nk);
+            klient_Window.Numer_klienta = TextBox_Numer_Klienta.Text;
             numer = Klienci.sprawdzenie(klient_Window);
             Klient_Menu_Window klient_menu = new Klient_Menu_Window();
             if (numer)
+            {
+                klient_Window = Klienci.Pobierz(klient_Window.Numer_klienta) as klient ;
+                string nazwa = "klient.xml";
+                XmlSerializer serializer = new XmlSerializer(typeof(klient));
+                StreamWriter writer = new StreamWriter(nazwa);
+                serializer.Serialize(writer, klient_Window);
+                writer.Close();
                 klient_menu.Show();
+            }
             else
                 MessageBox.Show("Podano zły numer");
         }
