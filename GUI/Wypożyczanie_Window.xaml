@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Wypożyczanie_Window" Height="450" Width="800">
     <Grid>
-        
+        <ListBox x:Name="listbox_oferta_window" HorizontalAlignment="Left" Height="272" Margin="36,70,0,0" VerticalAlignment="Top" Width="363"/>
+        <Label Content="Wybierz samochód do wypożyczenia" HorizontalAlignment="Left" Height="55" Margin="36,10,0,0" VerticalAlignment="Top" Width="363"/>
+        <Button x:Name="button_wypożycz" Content="wypożycz" HorizontalAlignment="Left" Height="85" Margin="464,144,0,0" VerticalAlignment="Top" Width="259" Click="Button_wypożycz_Click"/>
+
     </Grid>
 </Window>

@@ -35,6 +35,7 @@ namespace po_projekt
         private rodzaj_nadwozia Rodzaj_Nadwozia;
         private rezerw rezerwacja;
         private string rezerwujacy;
+        private string wypożyczający;
 
         public int Cena1 { get => Cena; set => Cena = value; }
         public int Rok_produkcji1 { get => Rok_produkcji; set => Rok_produkcji = value; }
@@ -95,6 +96,7 @@ namespace po_projekt
         /// Rezerwujący.
         /// </value>
         public string Rezerwujacy { get => rezerwujacy; set => rezerwujacy = value; }
+        public string Wypożyczający { get => wypożyczający; set => wypożyczający = value; }
 
 
         /// <summary>
@@ -114,6 +116,7 @@ namespace po_projekt
             Rodzaj_Nadwozia = rodzaj_Nadwozia;
             Rezerwacja = rezerw.Niezarezerwowany;
             Rezerwujacy = null;
+            Wypożyczający = null;
         }
         /// <summary>
         /// Inicjalizuje nową instancję <see cref="samochody"/> klasy.

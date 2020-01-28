@@ -128,7 +128,8 @@ namespace po_projekt
                         Console.WriteLine("                Jeżeli chcesz wyświetlić naszą ofertę wybierz: oferta");
                         Console.WriteLine("                Jeżeli chcesz zarezerwować samochód wybierz: rezerwuj");
                         Console.WriteLine("                Jeżeli chcesz wypożyczyć samochód wybierz: wypożycz");
-                        Console.WriteLine("                Jeżeli chcesz zobaczyć swoją listę aut zarezerwowanych wybierz: lista");
+                        Console.WriteLine("                Jeżeli chcesz zobaczyć swoją listę aut zarezerwowanych wybierz: listar");
+                        Console.WriteLine("                Jeżeli chcesz zobaczyć swoją listę aut wypożyczonych wybierz: listak");
                         Console.WriteLine("                Jeżeli chcesz wyjść wybierz : koniec\n");
                         Console.WriteLine("Twój wybór:");
                         wybór = Console.ReadLine();
@@ -188,9 +189,13 @@ namespace po_projekt
                             w1.wypożycz(w1.wybór_samochodu_do_wypożyczenia(Oferta, k), Oferta);
                             oferta.ZapiszXML("zapis.xml", Oferta);
                         }
-                        else if (wybór == "lista")
+                        else if (wybór == "listar")
                         {
                             k.Rezerwacje_klienta(Oferta);
+                        }
+                        else if (wybór == "listaw")
+                        {
+                            k.Wypożyczone_klienta(Oferta);
                         }
                         else if (wybór == "koniec")
                             break;

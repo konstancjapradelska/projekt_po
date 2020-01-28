@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="Rezerwacja_Window" Height="450" Width="800">
     <Grid>
-        
+        <ListBox x:Name="listbox_oferta_window" HorizontalAlignment="Left" Height="308" Margin="51,54,0,0" VerticalAlignment="Top" Width="342"/>
+        <Button x:Name="rezerwuj_button" Content="rezerwuj" HorizontalAlignment="Left" Height="66" Margin="491,176,0,0" VerticalAlignment="Top" Width="218" Click="Rezerwuj_button_Click"/>
+
     </Grid>
 </Window>

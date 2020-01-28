@@ -11,7 +11,7 @@ namespace po_projekt
     /// </summary>
     /// <seealso cref="po_projekt.oferta" />
     /// <seealso cref="po_projekt.IOferta" />
-    class rezerwacja : oferta, IOferta
+    public class rezerwacja : oferta, IOferta
     {
         int Ilość_samochodów_zarezerwowanych;
         /// <summary>

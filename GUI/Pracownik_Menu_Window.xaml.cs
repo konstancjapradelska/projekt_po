@@ -26,6 +26,7 @@ namespace GUI
 
         public Pracownik_Menu_Window()
         {
+            MoveBottomRightEdgeOfWindow();
             InitializeComponent();
         }
     }

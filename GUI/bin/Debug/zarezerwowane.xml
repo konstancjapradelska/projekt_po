@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSamochody xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <samochody>
+    <mnożnik>0.6</mnożnik>
+    <Cena1>20400</Cena1>
+    <Rok_produkcji1>2000</Rok_produkcji1>
+    <Klasa1>B</Klasa1>
+    <Podział_cenowy1>popularny</Podział_cenowy1>
+    <Marka1>Opel</Marka1>
+    <Silnik1>benzynowy</Silnik1>
+    <Skrzynia_Biegów1>manualna</Skrzynia_Biegów1>
+    <Rodzaj_Nadwozia1>hatchback</Rodzaj_Nadwozia1>
+    <Model1>Corsa</Model1>
+    <Rezerwacja>Zarezerwowany</Rezerwacja>
+    <Rezerwujacy>200</Rezerwujacy>
+  </samochody>
+  <samochody>
+    <mnożnik>0.6</mnożnik>
+    <Cena1>20400</Cena1>
+    <Rok_produkcji1>2000</Rok_produkcji1>
+    <Klasa1>B</Klasa1>
+    <Podział_cenowy1>popularny</Podział_cenowy1>
+    <Marka1>Opel</Marka1>
+    <Silnik1>benzynowy</Silnik1>
+    <Skrzynia_Biegów1>manualna</Skrzynia_Biegów1>
+    <Rodzaj_Nadwozia1>hatchback</Rodzaj_Nadwozia1>
+    <Model1>Corsa</Model1>
+    <Rezerwacja>Zarezerwowany</Rezerwacja>
+    <Rezerwujacy>200</Rezerwujacy>
+  </samochody>
+</ArrayOfSamochody>

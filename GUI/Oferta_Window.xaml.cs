@@ -28,6 +28,7 @@ namespace GUI
         }
         public Oferta_Window()
         {
+            MoveBottomRightEdgeOfWindow();
             InitializeComponent();
         
             oferta Oferta = new oferta();

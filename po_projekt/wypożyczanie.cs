@@ -10,7 +10,7 @@ namespace po_projekt
     /// Klasa opsująca wypożyczenia.
     /// </summary>
     /// <seealso cref="po_projekt.oferta" />
-    class wypożyczanie : oferta
+    public class wypożyczanie : oferta
     {
         /// <summary>
         /// Wypożyczanie samochodu z oferty.
@@ -58,6 +58,7 @@ namespace po_projekt
                 if (wybór == "TAK")
                 {
                     k = element;
+                    s.Wypożyczający = K.Numer_klienta;
                     break;
                 }
                 else

@@ -30,6 +30,7 @@ namespace GUI
         }
         public Klient_Window()
         {
+            MoveBottomRightEdgeOfWindow();
             InitializeComponent();
         }
         private void K_Button_Zatwierdź_Numer_Klienta_Click(object sender, RoutedEventArgs e)

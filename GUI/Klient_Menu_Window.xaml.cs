@@ -27,6 +27,7 @@ namespace GUI
         }
         public Klient_Menu_Window()
         {
+            MoveBottomRightEdgeOfWindow();
             InitializeComponent();
         }
 
@@ -58,6 +59,12 @@ namespace GUI
         {
             MainWindow koniec = new MainWindow();
             koniec.Show();
+        }
+
+        private void Lista_rezerwacji_button_Click(object sender, RoutedEventArgs e)
+        {
+            Lista_rezerwacji_Window rezerw = new Lista_rezerwacji_Window();
+            rezerw.Show();
         }
     }
 }

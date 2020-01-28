@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -19,35 +18,35 @@ using po_projekt;
 namespace GUI
 {
     /// <summary>
-    /// Logika interakcji dla klasy Lista_Wypożyczeń_Window.xaml
+    /// Logika interakcji dla klasy Lista_rezerwacji_Window.xaml
     /// </summary>
-    public partial class Lista_Wypożyczeń_Window : Window
+    public partial class Lista_rezerwacji_Window : Window
     {
-
         List<samochody> ls = new List<samochody>();
         private void MoveBottomRightEdgeOfWindow()
         {
             Left = Application.Current.MainWindow.Left;
             Top = Application.Current.MainWindow.Top;
         }
-
-        public Lista_Wypożyczeń_Window()
+        public Lista_rezerwacji_Window()
         {
             ls = OdczytajXML();
             MoveBottomRightEdgeOfWindow();
             InitializeComponent();
-            wypożyczone_list.ItemsSource = ls;
+            ls = OdczytajXML();
+            MoveBottomRightEdgeOfWindow();
+            InitializeComponent();
+            rezerwacje_list.ItemsSource = ls;
         }
 
         public List<samochody> OdczytajXML()
         {
             List<samochody> ls2 = new List<samochody>();
             XmlSerializer serializer = new XmlSerializer(typeof(List<samochody>));
-            StreamReader reader = new StreamReader("wypożyczone.xml");
+            StreamReader reader = new StreamReader("zarezerwowane.xml");
             ls2 = serializer.Deserialize(reader) as List<samochody>;
             reader.Close();
             return ls2;
         }
-
     }
 }

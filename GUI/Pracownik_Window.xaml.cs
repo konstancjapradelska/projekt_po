@@ -30,6 +30,7 @@ namespace GUI
         }
         public Pracownik_Window()
         {
+            MoveBottomRightEdgeOfWindow();
             InitializeComponent();
 
         }

@@ -105,6 +105,33 @@ namespace po_projekt
                 }
             }
         }
+        public void Wypożyczone_klienta(oferta s)
+        {
+            Console.WriteLine("Twoja lista wypożyczonych aut");
+            foreach (samochody element in s.Oferta)
+            {
+                if (element.Wypożyczający == this.Numer_klienta)
+                {
+                    Console.WriteLine(element);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+        }
+        public void wypożyczenia(oferta s)
+        {
+            List<samochody> w = new List<samochody>();
+            foreach (samochody element in s.Oferta)
+            {
+                if (element.Wypożyczający == this.Numer_klienta)
+                {
+                    w.Add(element);
+                }
+            }
+
+        }
 
         /// <summary>
         /// Wypisanie klienta.
