@@ -60,3 +60,5 @@ C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Lista_rezerwacji_Window.g
 C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\Lista_rezerwacji_Window.baml
 C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\lista_klientów_Window.g.cs
 C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\lista_klientów_Window.baml
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\lista_pracownikow_Window.g.cs
+C:\Users\Konstancja\Documents\projekt_po\GUI\obj\Debug\lista_pracownikow_Window.baml

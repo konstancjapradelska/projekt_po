@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="Pracownik Menu" Height="450" Width="800">
     <Grid>
-        <Button x:Name="oferta_button" Content="OFERTA" HorizontalAlignment="Left" Height="78" Margin="39,120,0,0" VerticalAlignment="Top" Width="224" Click="Oferta_button_Click"/>
-        <Button x:Name="klienci_button" Content="KLIENCI" HorizontalAlignment="Left" Height="78" Margin="313,120,0,0" VerticalAlignment="Top" Width="215" Click="Klienci_button_Click"/>
+        <Button x:Name="oferta_button" Content="OFERTA" HorizontalAlignment="Left" Height="78" Margin="32,120,0,0" VerticalAlignment="Top" Width="224" Click="Oferta_button_Click"/>
+        <Button x:Name="klienci_button" Content="KLIENCI" HorizontalAlignment="Left" Height="78" Margin="283,120,0,0" VerticalAlignment="Top" Width="215" Click="Klienci_button_Click"/>
+        <Button x:Name="pracownicy_button" Content="PRACOWNICY" HorizontalAlignment="Left" Height="78" Margin="528,120,0,0" VerticalAlignment="Top" Width="222" Click="Pracownicy_button_Click"/>
+        <Label Content="                                MENU" HorizontalAlignment="Left" Height="26" Margin="283,32,0,0" VerticalAlignment="Top" Width="245"/>
 
     </Grid>
 </Window>

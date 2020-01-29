@@ -42,5 +42,9 @@ namespace GUI
             Pracownik_Window pracownik_w = new Pracownik_Window();
             pracownik_w.ShowDialog();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

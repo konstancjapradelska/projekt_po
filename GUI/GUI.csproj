@@ -58,6 +58,9 @@
     <Compile Include="lista_klientów_Window.xaml.cs">
       <DependentUpon>lista_klientów_Window.xaml</DependentUpon>
     </Compile>
+    <Compile Include="lista_pracownikow_Window.xaml.cs">
+      <DependentUpon>lista_pracownikow_Window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lista_rezerwacji_Window.xaml.cs">
       <DependentUpon>Lista_rezerwacji_Window.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="lista_klientów_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lista_pracownikow_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
