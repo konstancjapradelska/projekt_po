@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,31 +16,27 @@ using po_projekt;
 
 namespace GUI
 {
-    
-    public partial class Pracownik_Menu_Window : Window
+    /// <summary>
+    /// Logika interakcji dla klasy lista_klientów_Window.xaml
+    /// </summary>
+    public partial class lista_klientów_Window : Window
     {
+        klient klient_Window = new klient();
+        ObservableCollection<klient> lista_klientów;
+        klienci Klienci = new klienci();
         private void MoveBottomRightEdgeOfWindow()
         {
             Left = Application.Current.MainWindow.Left;
             Top = Application.Current.MainWindow.Top;
         }
-
-        public Pracownik_Menu_Window()
+        public lista_klientów_Window()
         {
             MoveBottomRightEdgeOfWindow();
             InitializeComponent();
-        }
 
-        private void Oferta_button_Click(object sender, RoutedEventArgs e)
-        {
-            Oferta_Window oferta = new Oferta_Window();
-            oferta.Show();
-        }
-
-        private void Klienci_button_Click(object sender, RoutedEventArgs e)
-        {
-            lista_klientów_Window lk = new lista_klientów_Window();
-            lk.Show();
+            Klienci = Klienci.Odczytaj_Klientów_XML("klienci.xml") as klienci;
+            lista_klientów = new ObservableCollection<klient>(Klienci.Klienci);
+            klient_list.ItemsSource = lista_klientów;
         }
     }
 }

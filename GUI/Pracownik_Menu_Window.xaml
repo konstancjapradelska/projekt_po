@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="Pracownik Menu" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="oferta_button" Content="OFERTA" HorizontalAlignment="Left" Height="78" Margin="39,120,0,0" VerticalAlignment="Top" Width="224" Click="Oferta_button_Click"/>
+        <Button x:Name="klienci_button" Content="KLIENCI" HorizontalAlignment="Left" Height="78" Margin="313,120,0,0" VerticalAlignment="Top" Width="215" Click="Klienci_button_Click"/>
+
     </Grid>
 </Window>

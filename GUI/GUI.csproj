@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="lista_klientów_Window.xaml.cs">
+      <DependentUpon>lista_klientów_Window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lista_rezerwacji_Window.xaml.cs">
       <DependentUpon>Lista_rezerwacji_Window.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Klient_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lista_klientów_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
